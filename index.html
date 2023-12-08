@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta List -->
+    <!-- meta tag generator(search first, then delete this line) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="changeable content">
+    <meta name="description" content="blog site">
+    <meta name="keywords" content="changeable content,blog">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Md Aiubur Rahman">
+    
+    <title>Rename my project file</title>
+    <!-- Basic CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+    </div>
+
+    <div class="container">
+      <!-- 1.  Change Text -->
+      <h2>1. Click the button to change the text</h2>
+      <button type="button" class="btn btn-dark" onclick="textChange1()">Text Change</button>
+      <h3 id="tt_h3">Lorem</h3>
+      
+      <hr>      
+      <!-- 2. Button on/off -->
+      <h2>2. Click the button to on/off the bulb</h2>
+      <button class="btn btn-success" onclick="bulbOn()">Bulb on</button>
+      <button class="btn btn-danger" onclick="bulbOff()">Bulb off</button>
+      <img id="img" src="image/pic_bulboff.gif" alt="">
+
+      <hr>
+      <!-- 3. Show date -->
+      <h2>3. Click the button to show the Date</h2>
+      <button class="btn btn-dark" onclick="showDate()">Show Date</button>
+      <h3 id="sd">Show Date</h3>
+      
+      <hr>
+      <!-- 4. Change text -->
+      <h2>4. Click the button to change the text</h2>
+      <button type="button" class="btn btn-dark" onclick="textChange()">Text Change</button>
+      <h3 id="t_h3">lorem</h3>
+
+      <hr>
+      <!-- 5. Show result -->
+      <h2>5. Click the button to show the result</h2>
+      <button class="btn btn-dark" onclick="showResult()">Show Result</button>
+      <h3 id="result">Result</h3>
+
+      <hr>
+      <!-- 6. Show/hide text -->
+      <h2>6. Click the button to show/hide the text</h2>
+      <button type="button" class="btn btn-dark" id="btnHide">Hide</button>
+      <button type="button" class="btn btn-dark" id="btnShow">Show</button>
+  
+      <h2 id="sh_h3">Lorem ipsum dolor sit amet.</h2>
+  
+      <hr>
+      <!-- 7. Show alert -->
+      <h2>7. Click the button to show an alert</h2>
+      <button type="button" class="btn btn-dark" id="btn">Show alert</button>
+  
+      <hr>
+      <!-- 8. Check Box -->
+      <form>
+        <h2>8.</h2>
+        <p>
+          <input type="checkbox" name="newsletter" value="Hourly" class="c_check" checked="checked">
+          <input type="checkbox" name="newsletter" value="Daily" class="c_check">
+          <input type="checkbox" name="newsletter" value="Weekly" class="c_check">
+          <input type="checkbox" name="newsletter" value="Monthly" class="c_check" checked>
+          <input type="checkbox" name="newsletter" value="Yearly" class="c_check">
+        </p>
+      </form>
+      <div id="c_check" style="color: brown;"></div>
+
+      <hr>
+      <!-- 9. Radio -->
+      <form>
+        <h2>9.</h2>
+        <div>
+          <input type="radio" name="fruit" value="Orange" id="orange" class="c_fruit" style="line-height: 1.5em">
+          <label for="orange" style="line-height: 1.5em">Orange</label>
+        </div>
+        <div>
+          <input type="radio" name="fruit" value="Apple" id="apple" class="c_fruit" style="line-height: 1.5em">
+          <label for="apple" style="line-height: 1.5em">Apple</label>
+        </div>
+        <div>
+          <input type="radio" name="fruit" value="Banana" id="banana" class="c_fruit" style="line-height: 1.5em">
+          <label for="banana" style="line-height: 1.5em">Banana</label>
+        </div>
+        <div id="log"></div>
+      </form>
+
+      <hr>
+      <!-- 10. Triangle -->
+      <h2>10. Show the triangle result</h2>
+      <button class="btn btn-dark" onclick="showTriangle()">Show Result</button>
+      <h3 id="triangle">Show Result</h3>
+
+      <hr>
+      <!-- 11. Change Color -->
+      <div>
+        <h2>11. Click me</h2>
+        <button class="btn btn-info my-2" onclick="changeColor()">Change color</button>
+        <h5 id="text-color">Change Color</h5>
+      </div>
+
+      <hr>
+      <!-- 12. Change Status -->
+      <div>
+        <h2>12. Change Status</h2>
+        <p id="default-post" class="fs-4">Good Morning Everyone</p>
+        <textarea name="" id="post-text" placeholder=" Type Post" cols="60" rows="3"></textarea>
+        <br>
+        <button type="submit" class="btn btn-secondary" id="btn-post">Post</button>
+      </div>
+
+      <hr>
+      <!-- 13. Post New Comment -->
+      <div>
+        <h2>13. Post New Comment</h2>
+        <div id="comment-container">
+          <p class="fs-4 mb-0">Lorem ipsum dolor sit amet.</p>
+          <p class="fs-4 mb-0">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <textarea name="" id="new-comment" placeholder="Type Your Comment" class="mt-3" cols="60" rows="3"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary" id="btn-new-comment">Post</button>
+      </div>
+
+      <hr>
+      <!-- 14. Change Border Radius -->
+      <div>
+        <h2>14. Image Border Radius</h2>
+        <button class="btn btn-dark my-2" onclick="imageBorder()">Click</button>
+        <br>
+        <img id="img-border" src="image/nature.jpg" alt="Nature" style="width: 300px; height: 300px;">
+      </div>
+
+      <hr>
+      <!-- 15. Word Reverse -->
+      <div>
+        <h2>15. Word Reverse</h2>
+        <button class="btn btn-warning my-2" onclick="wordReverse()">Click</button>
+        <br>
+        <h5 id="word-reverse">Hello World</h5>
+      </div>
+      
+      <hr>
+      <!-- 16. Even or Odd -->
+      <div>
+        <h2>16. Check Even or Odd</h2>
+        <input type="number" name="" id="num-40">
+        <br>
+        <button class="btn btn-info my-2" id="even-or-odd">even-or-odd</button>
+        <h5 id="p_16">Result</h5>
+      </div>
+      
+      <hr>
+      <!-- 17. Leap Year -->
+      <div>
+        <h2>17. Check Leap Year</h2>
+        <input type="number" name="" id="num-41">
+        <br>
+        <button class="btn btn-outline-info my-2" id="leap-yr">Leap-Year</button>
+        <h5 id="p_17">Result</h5>
+      </div>
+
+      <hr>
+      <!-- 18. Dark/light mode -->
+      <div>
+        <h2>18. Dark/Light Mode</h2>
+        <button class="btn btn-outline-success my-2" onclick="modeChange()">Dark/Light Mode</button>
+      </div>
+
+      <hr>
+    </div>
+
+
+    <!-- JS CDN -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
